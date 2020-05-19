@@ -1,11 +1,9 @@
 // Requireng required packages
 const express = require('express')
 const bodyParser = require('body-parser')
-const fs = require('fs');
 
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
-countryCodes = JSON.parse(fs.readFileSync('./ISO-3166-country-codes.json'));
 const port = 3000;
 
 // Start up an instance of app
