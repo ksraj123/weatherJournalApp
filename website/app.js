@@ -64,6 +64,7 @@ const getTemp = async (evt)=>{
       console.log(resJson);
       addEntries(resJson.posts);
     }  catch(error) {
+        alert("incorrect US pincode, please try again");
       console.log("error", error);
       // appropriately handle the error
     }

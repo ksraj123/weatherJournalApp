@@ -1,10 +1,13 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+In this project an async web app is created which fetches weather data for the requested pin code from `OpenWeatherMap API` and stores the results in the server's memory
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Gettings Started
+The app can be executed with the following command
+    node server.js
+The app is hosted on the port `3000` by default but can be changed my making a change to the port variable in `server.js`
+Only US zip codes are supported for now.
 
 ## Extras
 If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
