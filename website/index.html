@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="semantic-ui/dimmer.min.css">
 <link rel="stylesheet" href="semantic-ui/loader.min.css">
+<link rel="stylesheet" href="semantic-ui/form.min.css">
 </head>
  <body>
 <div id = "app">
@@ -17,11 +18,11 @@
     <p></p>
   </div>
   <div class ="holder headline">
-    Weather Journal App
+    Weather Journal
   </div>
   <div class="working">
-    <div class="form">
-      <form action="#">
+    <div class="formContainer">
+      <form action="#" class="ui form">
         <div class ="holder zip">
           <label for="zip">Enter Zipcode here</label>
           <input type="text" id="zip" name="zip" placeholder="enter US zip code here ex 94040" required>
@@ -29,8 +30,8 @@
         <div class ="holder feel">
           <label for="feelings">How are you feeling today?</label>
           <textarea class= "myInput" id="feelings" name="feelings" placeholder="Enter your feelings here" rows="9" cols="50" required></textarea>
+          <button id="generate" type = "submit"> Generate </button> 
         </div>
-        <button id="generate" type = "submit"> Generate </button>
       </form>
     </div>
     <div class ="holder entry">
