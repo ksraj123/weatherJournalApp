@@ -21,15 +21,17 @@
   </div>
   <div class="working">
     <div class="form">
-      <div class ="holder zip">
-        <label for="zip">Enter Zipcode here</label>
-        <input type="text" id="zip" placeholder="enter zip code here">
-      </div>
-      <div class ="holder feel">
-        <label for="feelings">How are you feeling today?</label>
-        <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+      <form action="#">
+        <div class ="holder zip">
+          <label for="zip">Enter Zipcode here</label>
+          <input type="text" id="zip" name="zip" placeholder="enter zip code here" required>
+        </div>
+        <div class ="holder feel">
+          <label for="feelings">How are you feeling today?</label>
+          <textarea class= "myInput" id="feelings" name="feelings" placeholder="Enter your feelings here" rows="9" cols="50" required></textarea>
+        </div>
         <button id="generate" type = "submit"> Generate </button>
-      </div>
+      </form>
     </div>
     <div class ="holder entry">
       <div class = "title">Most Recent Entry</div>
