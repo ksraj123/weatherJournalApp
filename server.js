@@ -1,6 +1,5 @@
 // Requireng required packages
 const express = require('express')
-const bodyParser = require('body-parser')
 
 // Setup empty JS object to act as endpoint for all routes
 projectData = {posts: []};
