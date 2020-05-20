@@ -19,6 +19,7 @@ function getEntryFragment(data){
     const classes = ['date', 'temp', 'content'];
     for (let i = 0; i < classes.length; i++){
         const div = document.createElement('div');
+        // two elements cannot have the same id so classes are used instead
         div.classList.add(classes[i]);
         div.innerText = data[i];
         fragment.appendChild(div);
@@ -69,6 +70,8 @@ const getTemp = async (evt)=>{
     dimmer.classList.remove('active');
   }
 
+// event listener added to form instead of generate button to ensure that zip code cannot be left blank
+// easily with required attribute in the input element, the event object also encapsulates the input fields
 form.addEventListener('submit', getTemp);
 
 // makes a GET request to fetch the entries from our server when page loads
